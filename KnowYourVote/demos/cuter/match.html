@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Candidate Match Maker</title>
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" type="text/css" href="../../tinderesque.css">
+  <link rel="stylesheet" type="text/css" href="cuter.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+  <script type="text/javascript" src="slider.js"></script>
+
+
+  <style>
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+</style>
+
+
+<script>
+$(document).ready(function(){
+  $("#image1").click(function(){
+      $("#image1").hide();
+      console.log("hey");
+  });
+})
+
+</script>
+
+</head>
+
+<body class="text-center">
+  <header>
+    <h1 class="typewriter">Candidate Match Maker</h1>
+
+  </header>
+
+  <a href="./all.html"><button type="submit" value="Submit" style="margin-left: -5000px, margin-top: -50px">Done? Click Here</button></a>
+  <section>
+    <div class="cardcontainer list" class= "text-center" class="col-md-1">
+      <ul class="cardlist">
+        <li class="card current" class= "text-center"><img id="image1" src="https://i.ibb.co/w673DRc/Add-a-heading.png" alt=""></li>
+        <li class="card" class= "text-center"><img src="https://i.ibb.co/Z8861F6/Add-a-heading.jpg" alt=""></li>
+        <li class="card" class= "text-center"><img src="https://i.ibb.co/80LMkD9/Add-a-heading-1.jpg" alt=""></li>
+        <li class="card" class= "text-center"><img src="https://i.ibb.co/FY53tsp/Add-a-heading-2.jpg" alt=""></li>
+        <li class="card" class= "text-center"><img src="https://i.ibb.co/wKfZRzm/Add-a-heading-3.jpg" alt=""></li>
+        <li class="card" class= "text-center"><img src="https://i.ibb.co/vqKrGj4/Add-a-heading-4.jpg" alt=""></li>
+      </ul>
+      <br><br><br><br><br><br><br><br><br><br>
+      <button class="but-nope">X</button>
+      <button class="but-yay">✔</button>
+      <span id="counter"></span>
+    </div>
+
+  </div>
+  <ul class="cardlist" id="results">
+  </ul>
+
+
+<!-- <div class="container">
+  <img src="https://i.ibb.co/w673DRc/Add-a-heading.png" class="image" style="width:100%">
+  <div class="middle">
+    <div class="text">More Info</div>
+  </div>
+</div> -->
+
+
+  </section>
+
+</div>
+
+
+</body>
+
+<script src="../../tinderesque.js"></script>
+<script src="cuter.js"></script>
+
+</html>

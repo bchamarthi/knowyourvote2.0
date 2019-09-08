@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+   <title>Know Your Vote Quiz</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/the-big-picture.css" rel="stylesheet">
+
+
+<script type="text/javascript">
+    clicked = true;
+    $(document).ready(function(){
+        $("button").click(function(){
+            if(clicked){
+                $(this).css('background-color', '#ff5959');
+                clicked  = false;
+            } else {
+                $(this).css('background-color', 'white');
+                clicked  = true;
+		                		if(clicked){
+		                $(this).css('background-color', '#ff5959');
+		                clicked  = true;
+		            } else {
+		                $(this).css('background-color', 'white');
+		                clicked  = false;
+
+            }
+
+            }
+        });
+    });
+
+ </script>
+
+
+
+</head>
+<body>
+
+<div class="container policycent">
+	<section>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+         <div class="typewriter"><h1>POLICIES</h1>
+          	<br><h4 class="typewriter">Select 4 policies you are passionate about:</h4></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<div class="row">
+  <div class="col">
+  </div>
+  		<div class="buttons butcent" style="width:50px, height:50px">
+  			<button type="button" class="btn-minimumwage btn-lg">Minimum Wage</button> <br><br>
+  			<button type="button" class="btn-abortion btn-lg">Abortion</button><br><br>
+	 		<button type="button" class="btn-climatechange btn-lg">Climate Change</button> <br><br>
+	 		<button type="button" class="btn-guncontrol btn-lg">Gun Control</button> <br><br>
+		</div>
+	</div>
+
+  <div class="column2">
+		<div class="buttons2 butcenty">
+	 		<button type="button" class="btn-collegeeducation btn-lg">College Education</button> <br><br>
+			<button type="button" class="btn-btn-healthcare btn-lg">Healthcare</button> <br><br>
+			<button type="button" class="btn-btn-immigration btn-lg">Immigration</button> <br><br>
+	 		<button type="button" class="btn-btn-marijuana btn-lg">Marijuana</button> <br><br>
+	 	</div>
+	</div>
+</div>
+</div>
+
+
+<script>
+
+
+</script>
+<a href="./demos/cuter/match.html"><button type="submit" value="Submit" style="margin-left: -50px">Submit</button></a>
+
+</body>
+</html>
